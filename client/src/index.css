@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@layer base { body { font-family: 'Inter', system-ui, sans-serif; background-color: #f9fafb; color: #1f2937; } }
+@layer components {
+  .btn-primary { @apply bg-[#1E2761] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#0D1B4B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-accent  { @apply bg-[#F59E0B] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#D97706] transition-colors; }
+  .btn-outline { @apply border border-[#1E2761] text-[#1E2761] px-4 py-2 rounded-lg font-medium hover:bg-[#1E2761] hover:text-white transition-colors; }
+  .input { @apply w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-[#1E2761] transition; }
+  .card  { @apply bg-white rounded-xl shadow-sm border border-gray-100 p-5; }
+  .badge { @apply text-xs font-semibold px-2 py-0.5 rounded-full; }
+}

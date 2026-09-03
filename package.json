@@ -1,0 +1,12 @@
+{
+  "name": "boafo-gh",
+  "version": "1.0.0",
+  "description": "Boafo GH — Artisan Locator for Ghana",
+  "scripts": {
+    "dev:server": "cd server && node server.js",
+    "dev:client": "cd client && npm run dev",
+    "dev:ml": "cd ml-service && python app.py",
+    "build": "cd client && npm run build",
+    "start": "cd server && NODE_ENV=production node server.js"
+  }
+}
